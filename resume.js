@@ -1,4 +1,3 @@
-
 const baseURL = "https://gitconnected.com/v1/portfolio/";
 const username = "username";
 const url = `${baseURL}${username}`;
@@ -53,4 +52,3 @@ setTimeout(() => {
     };
     projectsAPI();
 }, 5000);
-
