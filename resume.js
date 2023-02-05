@@ -1,5 +1,5 @@
 const baseURL = "https://gitconnected.com/v1/portfolio/";
-const username = "jim3";
+const username = "username";
 const url = `${baseURL}${username}`;
 setTimeout(() => {
     const contactAPI = async () => {
