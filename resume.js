@@ -1,14 +1,13 @@
+
 const baseURL = "https://gitconnected.com/v1/portfolio/";
-const username = "username";
+const username = "jim3";
 const url = `${baseURL}${username}`;
 setTimeout(() => {
     const contactAPI = async () => {
         const box1 = document.querySelector("#box1");
         try {
             const response = await fetch(`${url}`);
-            console.log(response);
             const data = await response.json();
-            console.log(data);
             const list = data;
             Object.entries(list).forEach((e) => {
                 const [key, value] = e;
@@ -54,3 +53,4 @@ setTimeout(() => {
     };
     projectsAPI();
 }, 5000);
+
